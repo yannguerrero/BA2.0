@@ -1,0 +1,78 @@
+* { 
+    margin: 0;
+    padding: 0;
+    font-family: 'Questrial', sans-serif;
+ }
+ 
+/* Estilo de pantallas mas grandes*/
+
+@media (min-width: 1200px) {
+    body {
+        font-size: 18px;
+        background-color: rgb(174, 174, 219);
+    }
+}
+
+
+/*Navegador*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(240, 223, 236);
+    border-radius: 10px 0px 20px 20px;
+}
+
+.logo {
+    width: 200px;
+    height: 100px;
+    margin: 10px 0px 10px 30px;
+}
+
+.menu {
+    display: flex;
+    margin-right: 20px;
+    margin-top: 50px;
+}
+
+.menu li {
+    margin-right: 15px;
+    list-style: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(145, 82, 218);
+}
+.menu li a:hover {
+color: rgb(150, 47, 141);
+}
+
+/*Logo final*/
+
+.pop {
+    display: flex;
+    margin-top: 60px;
+    height: 110px;
+    background-color: rgb(240, 223, 236);
+    border-radius: 10px 0px 20px 20px;
+}
+
+.pop p {
+    margin-top: 2.5%;
+    width: 60%;
+    text-align: center;
+}
+
+footer h3 {
+margin: 10px 0px 12px 0px;
+text-align: center;
+font-weight: 400;
+}
+
+footer a {
+    text-decoration: none;
+    color: pink;
+}
+

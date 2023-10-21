@@ -1,0 +1,117 @@
+* { 
+    margin: 0;
+    padding: 0;
+    font-family: 'Questrial', sans-serif;
+ }
+ 
+/* Estilo de pantallas mas grandes*/
+
+@media (min-width: 1200px) {
+    body {
+        font-size: 16px;
+        background-color: rgba(152, 120, 165, 0.685);
+    }
+}
+
+/*Navegador*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(240, 223, 236);
+    border-radius: 10px 0px 20px 20px;
+}
+
+.logo {
+    width: 200px;
+    height: 100px;
+    margin: 10px 0px 10px 30px;
+}
+
+.menu {
+    display: flex;
+    margin-right: 20px;
+    margin-top: 50px;
+}
+
+.menu li {
+    margin-right: 15px;
+    list-style: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(145, 82, 218);
+}
+.menu li a:hover {
+color: rgb(150, 47, 141);
+}
+
+/*Formulario*/
+
+.formulario {
+    margin: 80px 0px 40px 0px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: rgb(230, 165, 195);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 30px;
+    position: absolute;
+    top: 35%;
+    left: 38%;
+}
+
+form .text-area {
+width: 400px;
+height: 100px;
+}
+
+form .submit{ 
+width: 50%;
+height: 30px;
+border-radius: 10px;
+background-color: palevioletred;
+
+}
+
+/*Logo final*/
+
+.pop {
+    display: flex;
+    margin-top: 25%;
+    height: 100px;
+    background-color: rgb(240, 223, 236);
+    border-radius: 10px 0px 20px 20px;
+}
+
+.pop p {
+    margin-top: 3.5%;
+    width: 85%;
+    text-align: center;
+}
+
+footer h3 {
+margin: 10px 0px 12px 0px;
+text-align: center;
+font-weight: 400;
+position: absolute;
+top: 96%;
+left: 38%;
+}
+
+
+footer a {
+    text-decoration: none;
+    color: pink;
+}
+
