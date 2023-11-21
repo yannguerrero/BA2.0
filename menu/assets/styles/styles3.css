@@ -88,7 +88,7 @@ background-color: palevioletred;
 
 .pop {
     display: flex;
-    margin-top: 25%;
+    margin-top: 24%;
     height: 100px;
     background-color: rgb(240, 223, 236);
     border-radius: 10px 0px 20px 20px;
@@ -105,7 +105,7 @@ margin: 10px 0px 12px 0px;
 text-align: center;
 font-weight: 400;
 position: absolute;
-top: 96%;
+top: 95%;
 left: 38%;
 }
 

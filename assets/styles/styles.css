@@ -52,34 +52,80 @@ color: rgb(150, 47, 141);
 /*Imagenes*/
 
 .contiene {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+}
+
+.contiene .page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.contiene .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.contiene .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contiene .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.contiene .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(54, 3, 45);
+    padding: 15px;
+    color: #f3f3f3;
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
     justify-content: space-between;
-    align-items: center;
-
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
 }
 
-.pages {
-    display: flex;
-    flex-direction: row;
-    margin-top: 10px;
-    justify-content: center;
-}
-
-.page {
+.contiene .back h3 {
+    font-size: 30px;
     text-align: center;
     margin-left: 20px;
     width: 300px;
     height: 300px;
-    background-color: rgb(241, 228, 239);
-    border-radius: 20px;
-    box-shadow: 6px 11px 5px -3px floralwhite;
 }
 
-.art {
-    width: 110px;
+.contiene .back p {
+    letter-spacing: 1.2px;
+    text-align: center;
+    align-items: center;
+    margin-top: 45%;
+} 
+
+.contiene:hover .front {
+    transform: perspective(600px) rotateY(180deg);
 }
+
+.contiene:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
 
 /*Logo final*/
 
@@ -106,76 +152,5 @@ font-weight: 400;
 footer a {
     text-decoration: none;
     color: pink;
-}
-
-
-
-
-
-
-
-
-
-
-
-/*
-.navart {
-    background-color: rgb(187, 147, 91);
-    font-family: 'Dancing Script', cursive;
-    font-family: 'Indie Flower', cursive;
-    font-family: 'Questrial', sans-serif;
-    padding: 0%;
-    display: flex;
-    justify-content: space-between;
-    
-    }
-    a{
-        text-decoration: double;
-        color: #cca8a8;
-    }
-    
-    ul{
-       list-style: none;
-    }
-    
-    .lyrics{
-        font-family: 'Dancing Script', cursive;
-        font-family: 'Indie Flower', cursive;
-        font-family: 'Questrial', sans-serif;
-        margin: 50px;
-        font-size: 20px;
-     }
-    @media (min-width: 1200px) {
-     body {
-        background-color: rgb(226, 207, 182);
-        font-size: 15px;
-    }
-}
-     .page {
-        width: 300px;
-        height: 250px;
-        border-style: outset;
-    }
-
-    .alt{
-
-        display: flex;
-  padding: 0%;
-       }
-    
-    .imagine {
-        
-        display: flex;
-        justify-content: center;
-   }
-    
-   .up {
-        
-    margin-top: 15px;
-    padding-top: 15px;
-    height: 100%;
-    width: 100%;
-    font-size: 20px;
-       
 }
 
